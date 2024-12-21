@@ -27,12 +27,13 @@ export default function Home() {
       <header className="flex flex-col gap-6">
         <h1 className="text-6xl text-center text-">Lindavista</h1>
         <search>
-          <form className="flex flex-row gap-4" onSubmit={handleSubmit}>
+          <form className="flex flex-row gap-2 items-center" onSubmit={handleSubmit}>
             <input
-              className="border-blue-800 border-2 rounded-lg flex-1 m-3 px-2 py-1"
+              className="border-blue-800 border-2 rounded-lg flex-1 m-2 px-2 py-1"
               value={query}
-              onChange={(e) => handleInputChange(e.target.value)} />
-            <button className="flex-initial rounded-full bg-blue-800 aspect-square flex items-center justify-center hover:scale-105 hover:saturate-50 transition-all duration-300" type="submit">
+              onChange={(e) => handleInputChange(e.target.value)}
+            />
+            <button className="rounded-full bg-blue-800 aspect-square flex items-center justify-center hover:scale-105 hover:saturate-50 transition-all duration-300 p-4" type="submit">
               <Image src="/search.svg" alt="Go to search" width={20} height={20} />
             </button>
           </form>
