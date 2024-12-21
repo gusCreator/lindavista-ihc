@@ -3,15 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: rgb(6, 7, 124);
+  --background: linear-gradient(0deg, rgba(6,7,124,1) 0%, rgba(10,10,223,1) 18%, rgba(255,255,255,1) 100%);
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
